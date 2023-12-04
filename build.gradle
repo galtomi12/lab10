@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fasterxml:jackson-xml-databind:0.6.2'
+    implementation 'com.konghq:unirest-objectmapper-jackson:3.14.1'
+    implementation 'org.kie.kogito:kogito-api-incubation-common-objectmapper:1.41.0.Final'
+    implementation 'io.github.javiercanillas:jackson-masker:0.9.9'
+    implementation 'io.liftwizard:liftwizard-bundle-object-mapper:2.0.1'
+    implementation 'com.konghq:unirest-object-mappers-gson:3.14.1'
+    implementation 'de.flapdoodle.mongoom:de.flapdoodle.mongoom:1.4'
+    implementation 'com.github.lbovolini:object-mapper:1.1.68'
+    implementation 'com.xellitix.commons:jackson-utils:0.2.0'
+    implementation 'com.github.lbovolini:ObjectMapper:0.2.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.2'
+}
+
+test {
+    useJUnitPlatform()z
+}
